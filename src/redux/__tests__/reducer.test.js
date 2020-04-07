@@ -1,5 +1,5 @@
 import reducer from "../reducer";
-import { HELLO_WORLD } from "../actions";
+import Actions from "../actions";
 describe("Testing Redux Reducer", () => {
   it("Gives an empty state when I give it a unknown type", () => {
     expect(reducer({}, { type: "foobar", payload: "" })).toEqual({});
@@ -9,7 +9,7 @@ describe("Testing Redux Reducer", () => {
     const store = reducer(
       {},
       {
-        type: HELLO_WORLD,
+        type: Actions.HELLO_WORLD,
         payload: helloWorld,
       }
     );

@@ -11,6 +11,7 @@
     "start": "parcel src/index.html",
     "build-prod": "parcel build src/index.html",
     "test": "jest --collectCoverage ./src",
+    "test-watch": "jest --watch ./src",
     "integration": "concurrently \"yarn parcel src/index.html\" \"yarn run cypress open\"",
     "i": "concurrently \"yarn parcel src/index.html\" \"yarn run cypress open\"",
     "storybook": "start-storybook",
