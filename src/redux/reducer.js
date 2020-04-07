@@ -47,7 +47,13 @@ const reducer = (state = {}, { type, payload }) => {
       return { ...state, siblingNameSearch: payload, siblings };
     }
     case Actions.DESCENDANT_INPUT: {
-      return { ...state, descendant: payload };
+      const person = findPerson(payload, state.data) || {
+        name: "",
+        gender: "",
+      };
+      const descendants = findDescendant(person, state.data);
+
+      return { ...state, descendantNameSearch: payload, descendants };
     }
     default:
       return { ...state };
@@ -71,11 +77,30 @@ export const findPerson = (pattern = "", list = []) => {
     return false;
   });
 };
+export const findDescendant = (parentObj, list = []) => {
+  const parent = parentObj.gender === "male" ? "father" : "mother";
+  const filteredList = list.filter((childObj) => {
+    return childObj[parent] === parentObj.name;
+  });
+  if (filteredList.length === 0) {
+    return [];
+  }
+  return [
+    ...filteredList,
+    ...filteredList
+      .map((childObj) => {
+        return findDescendant(childObj, list).flat();
+      })
+      .flat(),
+  ];
+};
 export const defaultState = {
   mother: undefined,
   father: undefined,
   data: [],
   siblings: [],
   siblingNameSearch: undefined,
+  descendantNameSearch: undefined,
+  descendants: [],
 };
 export default reducer;
