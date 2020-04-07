@@ -1,0 +1,258 @@
+[
+  {
+    "name": "Abelard",
+    "mother": "Gert",
+    "father": "Sidney",
+    "gender": "male",
+    "spouse": "Nadine"
+  },
+  {
+    "name": "Ros",
+    "mother": "Hildagard",
+    "father": "Ben",
+    "gender": "female",
+    "spouse": "Giraldo"
+  },
+  {
+    "name": "Jasper",
+    "mother": "Marcella",
+    "father": "Nico",
+    "gender": "male"
+  },
+  {
+    "name": "Scotti",
+    "mother": "Selina",
+    "father": "Petr",
+    "gender": "male",
+    "spouse": "Shawna"
+  },
+  {
+    "name": "Selig",
+    "mother": "Julissa",
+    "father": "Aditya",
+    "gender": "male"
+  },
+  {
+    "name": "Aditya",
+    "mother": "Margurite",
+    "father": "Wyatt",
+    "gender": "male",
+    "spouse": "Julissa"
+  },
+  {
+    "name": "Devon",
+    "mother": "Vanni",
+    "father": "Nicky",
+    "gender": "female"
+  },
+  {
+    "name": "Dulcine",
+    "mother": "Ros",
+    "father": "Giraldo",
+    "gender": "female",
+    "spouse": "Towny"
+  },
+  {
+    "name": "Walther",
+    "mother": "Devina",
+    "father": "Corbin",
+    "gender": "male",
+    "spouse": "Conny"
+  },
+  {
+    "name": "Nico",
+    "mother": "Donni",
+    "father": "Rodrigo",
+    "gender": "male",
+    "spouse": "Marcella"
+  },
+  {
+    "name": "Vanni",
+    "mother": "Pauli",
+    "father": "Barri",
+    "gender": "female",
+    "spouse": "Nicky"
+  },
+  {
+    "name": "Shirleen",
+    "mother": "Sybille",
+    "father": "Glynn",
+    "gender": "female",
+    "spouse": "Maynard"
+  },
+  {
+    "name": "Maynard",
+    "mother": "Dee Dee",
+    "father": "Konstantin",
+    "gender": "male",
+    "spouse": "Shirleen"
+  },
+  {
+    "name": "Jeniece",
+    "mother": "Molli",
+    "father": "Ravil",
+    "gender": "female",
+    "spouse": "Serge"
+  },
+  {
+    "name": "Towny",
+    "mother": "Kendra",
+    "father": "Randell",
+    "gender": "male",
+    "spouse": "Dulcine"
+  },
+  {
+    "name": "Alejandrina",
+    "mother": "Luella",
+    "father": "Spud",
+    "gender": "female",
+    "spouse": "Brooks"
+  },
+  {
+    "name": "Marcella",
+    "mother": "Esme",
+    "father": "Sandor",
+    "gender": "female",
+    "spouse": "Nico"
+  },
+  {
+    "name": "Margurite",
+    "mother": "Joela",
+    "father": "Smitty",
+    "gender": "female",
+    "spouse": "Wyatt"
+  },
+  {
+    "name": "Wyatt",
+    "mother": "Olimpia",
+    "father": "Trev",
+    "gender": "male",
+    "spouse": "Margurite"
+  },
+  {
+    "name": "Shawna",
+    "mother": "Kimberlee",
+    "father": "Haywood",
+    "gender": "female",
+    "spouse": "Scotti"
+  },
+  {
+    "name": "Conny",
+    "mother": "Wenona",
+    "father": "Perry",
+    "gender": "female",
+    "spouse": "Walther"
+  },
+  {
+    "name": "Meredithe",
+    "mother": "Conny",
+    "father": "Walther",
+    "gender": "female"
+  },
+  {
+    "name": "Tammy",
+    "mother": "Brenda",
+    "father": "Luther",
+    "gender": "male",
+    "spouse": "Madge"
+  },
+  {
+    "name": "Madge",
+    "mother": "Magdalena",
+    "father": "Arne",
+    "gender": "female",
+    "spouse": "Tammy"
+  },
+  {
+    "name": "Serge",
+    "mother": "Havivah",
+    "father": "Eduardo",
+    "gender": "male",
+    "spouse": "Jeniece"
+  },
+  {
+    "name": "Nadine",
+    "mother": "Shirleen",
+    "father": "Maynard",
+    "gender": "female",
+    "spouse": "Abelard"
+  },
+  {
+    "name": "Annemarie",
+    "mother": "Margurite",
+    "father": "Wyatt",
+    "gender": "female"
+  },
+  {
+    "name": "Brooks",
+    "mother": "Vanni",
+    "father": "Nicky",
+    "gender": "male",
+    "spouse": "Alejandrina"
+  },
+  {
+    "name": "Carlyn",
+    "mother": "Esme",
+    "father": "Sandor",
+    "gender": "female"
+  },
+  {
+    "name": "Lanette",
+    "mother": "Marcella",
+    "father": "Nico",
+    "gender": "female"
+  },
+  {
+    "name": "Giraldo",
+    "mother": "Vanni",
+    "father": "Nicky",
+    "gender": "male",
+    "spouse": "Ros"
+  },
+  {
+    "name": "Merl",
+    "mother": "Marcella",
+    "father": "Nico",
+    "gender": "female"
+  },
+  {
+    "name": "Julissa",
+    "mother": "Adena",
+    "father": "Shepherd",
+    "gender": "female",
+    "spouse": "Aditya"
+  },
+  {
+    "name": "Sandor",
+    "mother": "Dulcine",
+    "father": "Towny",
+    "gender": "male",
+    "spouse": "Esme"
+  },
+  {
+    "name": "Esme",
+    "mother": "Lissa",
+    "father": "Gearard",
+    "gender": "female",
+    "spouse": "Sandor"
+  },
+  {
+    "name": "Nicky",
+    "mother": "Julee",
+    "father": "Barret",
+    "gender": "male",
+    "spouse": "Vanni"
+  },
+  {
+    "name": "Kimberli",
+    "mother": "Julissa",
+    "father": "Aditya",
+    "gender": "female"
+  },
+  {
+    "name": "Abigael",
+    "mother": "Julissa",
+    "father": "Aditya",
+    "gender": "female"
+  }
+]

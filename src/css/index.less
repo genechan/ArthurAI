@@ -1,0 +1,26 @@
+/***
+  INFO these are browser css reset that I like to use that come from blueprint css
+  to clear and browser defaults that may be different from browsers like
+  IE, firefox, chrome, safari and the like.
+*/
+@import "./reset/reset.css" screen;
+@import "./reset/print.css" print;
+@import "./reset/typography.css" screen;
+@import "./reset/ie.css" screen;
+
+@primary-color: black;
+@bg: white;
+@header: "Shadows Into Light", cursive;
+@description: "Roboto", sans-serif;
+@marginWrapper: 1em;
+
+body {
+  color: @primary-color;
+  background-color: @bg;
+  margin: @marginWrapper;
+}
+#app,
+#app > article {
+  margin: 0;
+  padding: 0;
+}
