@@ -1,22 +1,45 @@
 import React from "react";
-import { HELLO_WORLD } from "./redux/actions";
-import { HelloWorld } from "./components";
+import Actions from "./redux/actions";
+import { Sibling, Descendants } from "./components";
 
 import { useDispatch, useSelector } from "react-redux";
 const App = () => {
   const dispatch = useDispatch();
-  const helloWorld = useSelector((state) => state.helloWorld);
   React.useEffect(() => {
-    dispatch({
-      type: HELLO_WORLD,
-      payload: "hello world",
-    });
+    dispatch({ type: Actions.LOAD_DATA });
   }, []);
-
+  // for siblings
+  const siblings = useSelector((store) => store.siblings);
+  const siblingNameSearch = useSelector((store) => store.siblingNameSearch);
+  const siblingOnChange = (e) => {
+    dispatch({
+      type: Actions.SIBLING_NAME_SEARCH,
+      payload: e.target.value.trim(),
+    });
+  };
+  // for descendants
+  const descendants = useSelector((store) => store.descendants);
+  const descendantNameSearch = useSelector(
+    (store) => store.descendantNameSearch
+  );
+  const descendantOnChange = (e) => {
+    dispatch({
+      type: Actions.DESCENDANT_INPUT,
+      payload: e.target.value.trim(),
+    });
+  };
   return (
     <div>
-      {helloWorld}
-      <HelloWorld />
+      <Sibling
+        value={siblingNameSearch}
+        onChange={siblingOnChange}
+        list={siblings}
+      />
+      <Descendants
+        value={descendantNameSearch}
+        onChange={descendantOnChange}
+        list={descendants}
+      />
     </div>
   );
 };

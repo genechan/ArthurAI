@@ -1,11 +1,12 @@
 import Actions from "./actions";
+import Data from "../data/sample";
 
 const reducer = (state = {}, { type, payload }) => {
   switch (type) {
-    case Actions.HELLO_WORLD:
+    case Actions.LOAD_DATA:
       return {
         ...state,
-        helloWorld: payload,
+        data: Data,
       };
     case Actions.MOTHER_INPUT: {
       const siblings = findSiblings("mother", payload, state.data);
@@ -44,7 +45,7 @@ const reducer = (state = {}, { type, payload }) => {
       });
       let siblings = findSiblings("mother", person.mother, list);
       siblings = findSiblings("father", person.father, siblings);
-      return { ...state, siblingNameSearch: payload, siblings };
+      return { ...state, siblingNameSearch: payload, siblings: siblings || [] };
     }
     case Actions.DESCENDANT_INPUT: {
       const person = findPerson(payload, state.data) || {
