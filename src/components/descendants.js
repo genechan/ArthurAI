@@ -9,7 +9,7 @@ const Descendants = ({ value, onChange, list = [] }) => {
       <p>Find all you children and grandchildren</p>
       <Search label="Descendant" value={value} onChange={onChange} />
       {list.length > 0 && <div>Count: &nbsp;{list.length}</div>}
-      <List list={list} />
+      <List list={list} id={"descendant-list"} />
     </StyledDiv>
   );
 };

@@ -8,7 +8,7 @@ const Siblings = ({ value, onChange, list }) => {
     <StyledDiv>
       <p>Search for all you brother and sisters</p>
       <Search label="Sibling" value={value} onChange={onChange} />
-      <List list={list} />
+      <List list={list} id={"sibling-list"} />
     </StyledDiv>
   );
 };
