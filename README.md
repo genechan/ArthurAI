@@ -10,7 +10,7 @@ First install dependencies:
 yarn install
 ```
 
-To run in hot module reloading mode:
+To run in hot module reloading mode and to view the project:
 
 ```sh
 yarn start
